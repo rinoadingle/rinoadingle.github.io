@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rinoa's Website</title>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<header>
+  <nav>
+    <ul>
+     <li>
+       <a href="#welcome-section" class="nav-links"> About</a>
+      </li>
+      <li>
+        <a href="#work-section" class="nav-links">Work</a>
+        </li>
+        <li>
+        <a href="#gallery-section" class="nav-links">Gallery</a>
+        </li>
+      <li>
+        <a  href="#contact-section" class="nav-links">Contact</a>
+      </li>
+    </ul>
+    </nav>
+</header>
+
+<section id="welcome-section" class="section">
+  <h6>Hi I'm</h6>
+  
+    <h1>Rinoa M. Dingle</h1>
+  
+     <h6>Web Developer</h6>
+ </section>
+
+<section id="work-section" class="section">
+
+   <h4>Here are some of my work</h4>
+
+ 	<div class="project-container">
+  		<div class="box">
+		 <div class="inner-pcontainer">
+			<div class="pricing-header">
+				<a href="https://codepen.io/rinoa-martin-dingle/full/bGEeJVK" target="_blank">
+					<img class="proj-image" src="images/Projects/Technical_Document.PNG">
+				</a>
+			</div>
+			<p class="proj-text">Technical Documentation Page</p>
+		</div>
+		<div class="inner-pcontainer">
+			<div class="pricing-header">
+				<a href="https://codepen.io/rinoa-martin-dingle/full/dyGXePN" target="_blank">
+				
+					<img class="proj-image" src="images/Projects/Survey_Form.PNG">
+				</a>
+			</div>
+			<p class="proj-text">Survey Form</p>	
+		</div>
+		<div class="inner-pcontainer">
+			<div class="pricing-header">
+				<a href="https://codepen.io/rinoa-martin-dingle/full/OJMXEXe" target="_blank">
+				
+					<img class="proj-image" src="images/Projects/Product_Landing.PNG">
+				</a>
+			</div>
+			<p class="proj-text">Product Page</p>	
+		</div>
+		</div>
+	</div> 
+
+
+
+
+
+<h4>Certifications</h4>
+
+ 	<div class="project-container">
+  		<div class="box">
+		 <div class="inner-pcontainer">
+			<div class="pricing-header">
+				<a href="https://www.freecodecamp.org/certification/rinoa/responsive-web-design" target="_blank">
+					<img class="proj-image" src="images/Projects/Responsive_Certificate.PNG">
+				</a>
+			</div>
+			<p class="proj-text">Responsive Web Design</p>
+		</div>
+		<div class="inner-pcontainer">
+			<div class="pricing-header">
+				<a href="https://www.freecodecamp.org/certification/rinoa/javascript-algorithms-and-data-structures" target="_blank">
+				
+					<img class="proj-image" src="images/Projects/Javascript_Certificate.PNG">
+				</a>
+			</div>
+			<p class="proj-text">Javascript Algorithms and Data Structures</p>	
+		</div>
+		<div class="inner-pcontainer">
+			<div class="pricing-header">
+				<a href="https://www.freecodecamp.org/certification/rinoa/front-end-libraries" target="_blank">
+				
+					<img class="proj-image" src="images/Projects/Front_End_Certificate.PNG">
+				</a>
+			</div>
+			<p class="proj-text">Front End Libraries</p>	
+		</div>
+		</div>
+	</div> 
+
+
+
+</section>
+  
+  <section id="gallery-section" class="section">
+  <h2>Gallery</h2>
+  <div id="selected_img">
+ <img src="images/gallery/rinoa.jpg" alt="My Home">
+ </div>
+ <ul id="image_list">
+ 	<li><img src="images/gallery/rinoa.jpg" ></li>
+ <li><img src="images/gallery/family1.jpg" ></li>
+ <li><img src="images/gallery/family2.jpg" ></li>
+ <li><img src="images/gallery/family3.jpg" ></li>
+<li><img src="images/gallery/7thomas.jpg" ></li>
+ <li><img src="images/gallery/rojay.jpg" ></li>
+
+ </ul>
+ </section>
+
+<section id="contact-section" class="section">
+  <h2>Contact Me!</h2>
+  
+	<a href="https://www.facebook.com/rinoa.dingle.martin.9" target="_blank" class="social-links">
+		<img height="108px" width="100px" class="fa fa-facebook" src="images/social/fb.webp">			
+	</a>
+  
+  	<a href="mailto:rinoadingle0604@gmail.com" target="_blank" class="social-links">
+		<img class="fa fa-facebook" src="images/social/gmail.png">			
+	</a>		
+
+   
+ </section>
+
+
+ <script type="text/javascript">
+ 	
+ 	var selectedImg = document.getElementById('selected_img');
+ var images = document.getElementById('image_list').getElementsByTagName('li');
+for (i = 0; i < images.length; i++)
+ {
+ images[i].addEventListener('click', activateImage);
+ }
+function activateImage()
+ {
+ selectedImg.innerHTML = this.innerHTML;
+ }
+ </script>>
+
+</body>
+</html>
