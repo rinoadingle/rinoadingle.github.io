@@ -195,4 +195,23 @@ figure{
   body {
     width: 100%;
   }
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  .inner-pcontainer {
+      width: 250px;
+      height: 150px;
+  }
+
+  .proj-image {
+      width: 220px;
+      height: 120px;
+  }
+
+  .inner-pcontainer:hover {
+  
+      max-width: 240px;
+  }
 }
