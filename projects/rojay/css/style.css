@@ -1,0 +1,109 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+font-family: 'Gloria Hallelujah', cursive;
+background-color:black;
+}
+.bg{
+
+ background: url(../images/rojay5.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100%;
+}
+
+
+header{
+	background: #000000;
+	padding:10px;
+}
+nav{
+	text-align:right;
+}
+ul {
+    list-style: none;
+   
+}
+ul li{
+	display:inline-block;
+	margin-right:20px;
+}
+ul li a {
+	font-size:20px;
+	color: white;
+	text-decoration:none;
+}
+ul li a.active{
+color:red;
+
+}
+
+h1{
+	font-size:60px;
+	text-align:center;
+
+}
+.home{
+	width: 40%;
+	text-align:left;
+	color:#000000;
+
+	height:100%;
+	padding:8% 0 15% 30px;
+
+}
+.home h1{
+	color:#000000;
+	text-align:left;
+}
+.transparent {
+  background-color: rgba(255,255,255,0.5);
+  padding:20px;
+}
+.aligncenter{
+	text-align:center;
+	background-color: white;
+}
+.idrojay{
+height: 200px;
+border:8px solid gray;
+}
+p{
+	font-size: 20px;
+}
+#selected_img
+ {
+ max-width: 560px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 5px solid black;
+text-align: center;
+   padding:10px;
+     margin-bottom:10px;
+     background-color:black;
+ }
+ #selected_img img
+ {
+text-align: center;
+ height: 400px;
+ width:550px;
+ }
+ #image_list {
+ 	text-align: center;
+ 
+ }
+ #image_list li{
+ 	text-align: center;
+ display: inline-block;
+ max-height: 250px;
+ }
+ #image_list li img{
+ 	text-align: center;
+ width: 80px;
+ height: 60px;
+ }

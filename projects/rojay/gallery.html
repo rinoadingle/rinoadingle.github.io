@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<title>Rojayweb</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Red+Rose&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav>
+		<ul>
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			<li>
+				<a href="gallery.html" class="active">Gallery</a>
+			</li>
+		</ul>
+	</nav>
+	</header>
+	
+  
+  <section id="gallery-section" class="section aligncenter">
+  <h1>Gallery</h1>
+  <div id="selected_img">
+ <img src="images/rojay3.jpg" alt="My Home">
+ </div>
+ <ul id="image_list">
+ 	<li><img src="images/rojay3.jpg" ></li>
+ 	<li><img src="images/rojay2.jpg" ></li>
+ <li><img src="images/family.jpg" ></li>
+ 
+ <li><img src="images/rojay4.jpg" ></li>
+<li><img src="images/rojay5.jpg" ></li>
+
+ </ul>
+ </section>
+ <script type="text/javascript">
+ 	
+ 	var selectedImg = document.getElementById('selected_img');
+ var images = document.getElementById('image_list').getElementsByTagName('li');
+for (i = 0; i < images.length; i++)
+ {
+ images[i].addEventListener('click', activateImage);
+ }
+function activateImage()
+ {
+ selectedImg.innerHTML = this.innerHTML;
+ }
+ </script>>
+	
+</body>
+</html>
